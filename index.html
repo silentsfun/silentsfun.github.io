@@ -6,7 +6,7 @@
     <title>Theatre Project</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
-        /* Center and resize the entire content */
+ /* Center and resize the entire content */
         body {
             display: flex;
             flex-direction: column;
@@ -18,9 +18,20 @@
 
         /* Center and resize the 3D model container */
         .model-viewer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             max-width: 800px; /* Adjust as needed */
             text-align: center;
+            margin-top: 20px; /* Add margin if necessary */
+        }
+
+        /* Adjust the model size */
+        model-viewer {
+            width: 100%;
+            max-width: 100%; /* Adjust the maximum size */
+            height: auto; /* Maintain the aspect ratio */
         }
     </style>
 </head>
